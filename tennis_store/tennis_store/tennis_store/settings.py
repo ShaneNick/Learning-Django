@@ -36,7 +36,8 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'tennis_balls'
+    'tennis_balls_app',
+    'user_acc'
 ]
 
 MIDDLEWARE = [

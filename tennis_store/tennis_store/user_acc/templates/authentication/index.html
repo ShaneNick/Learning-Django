@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Dashboard</title>
+</head>
+<body>
+    <h1>Welcome to the User Dashboard</h1>
+    <p>This is the main page for authenticated users.</p>
+    <a href="{% url 'login' %}">Login</a> | 
+    <a href="{% url 'signup' %}">Sign Up</a> | 
+    <a href="{% url 'logout' %}">Logout</a>
+</body>
+</html>

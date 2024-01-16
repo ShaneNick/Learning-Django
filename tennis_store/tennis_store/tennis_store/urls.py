@@ -20,5 +20,13 @@ from django.urls import path, include  # Notice 'include' is added here
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('tennis_balls/', include('tennis_balls.urls'))
+    path('tennis-balls/', include('tennis_balls_app.urls')),
+    path('auth/', include('user_acc.urls')),
+]
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('', include('user_acc.urls')),  # Redirect root to auth
+    path('tennis-balls/', include('tennis_balls_app.urls')),  # Keep your tennis-balls URLs here
+    path('auth/', include('user_acc.urls')),  # Keep your authentication URLs here
 ]

@@ -3,5 +3,6 @@ from . import views
 
 #URL configs
 urlpatterns = [
-    path('hello/', views.ball_count),
+    path("", views.home, name= 'home'),
 ]
+
